@@ -197,6 +197,20 @@ img.art-png{transition:filter .4s var(--ease)}
 .vo-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .vo-combo{margin:18px 0 0 !important;font-size:14px !important;color:var(--text-3) !important}
 .vo-combo b{color:var(--text)}
+.lu-split{grid-template-columns:1.05fr 1fr;border-color:rgba(56,189,248,.32)}
+.lu-split::before{content:'';position:absolute;inset:0;background:radial-gradient(600px 300px at 15% 20%,rgba(56,189,248,.13),transparent 70%);pointer-events:none}
+.lu-media{flex-direction:column;gap:14px}
+.lu-media::before{background:radial-gradient(circle,rgba(56,189,248,.3),transparent 70%)}
+.split-media.lu-media img{width:100%;border-radius:16px;animation:none;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.lu-thumbs{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative}
+.split-media.lu-media .lu-thumbs img{border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.lu-tag{background:rgba(56,189,248,.14) !important;color:#7DD3FC !important;border-color:rgba(56,189,248,.35) !important}
+.lu-grad{background:linear-gradient(90deg,#38BDF8,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lu-note{margin:18px 0 0 !important;font-size:13.5px !important;color:var(--text-3) !important}
+.lu-note b{color:var(--text)}
+@media(min-width:969px) and (max-width:1199px){.nav-links a[href="#lumen"]{display:none}}
+.lu-new{font-size:10px;font-weight:800;background:#38BDF8;color:#06202c;border-radius:100px;padding:2px 6px;margin-left:4px;vertical-align:2px}
+@media(max-width:900px){.lu-split .vo-list{max-width:460px;margin-left:auto;margin-right:auto}}
 @media(max-width:900px){.vo-ctas{justify-content:center}.vo-list,.vo-audio{max-width:460px;margin-left:auto;margin-right:auto}.vo-audio audio{margin:0 auto}}
 .split-copy h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:16px;line-height:1.15}
 .split-copy p{color:var(--text-2);margin-bottom:28px;font-size:clamp(.95rem,1.4vw,1.1rem);line-height:1.6}
@@ -418,6 +432,7 @@ img.art-png{transition:filter .4s var(--ease)}
       <a href="#tools" class="nav-link">Catálogo</a>
       <a href="#packs" class="nav-link">Precios</a>
       <a href="#voiceoff" class="nav-link">🎙️ VoiceOFF <span class="vo-new">NUEVO</span></a>
+      <a href="#lumen" class="nav-link" style="white-space:nowrap">🔍 LUMEN</a>
       <a href="#gratis" class="nav-link">Gratis</a>
       <a href="#comprar" class="nav-link">Cómo comprar</a>
       <a href="#demo" class="nav-link">Demo</a>
@@ -487,6 +502,38 @@ img.art-png{transition:filter .4s var(--ease)}
           <a class="btn btn-ghost" href="https://corderorauly-raullg57.github.io/EditorRCG_V8.2/" target="_blank" rel="noopener">🎬 Ponle vídeo con Editor RCG</a>
         </div>
         <p class="vo-combo">💡 <b>Combo ganador:</b> crea la voz con VoiceOFF y conviértela en un vídeo con subtítulos automáticos en Editor RCG (prueba 3 días gratis).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="lumen" style="padding-top:20px;padding-bottom:20px">
+  <div class="container">
+    <div class="split lu-split reveal">
+      <div class="split-media lu-media">
+        <a href="https://corderorauly-raullg57.github.io/lumen_ocr/" target="_blank" rel="noopener"><img src="lumen-banner.jpg" alt="LUMEN OCR v3.1: convierte fotos y PDF en texto editable sin internet" loading="lazy"></a>
+        <div class="lu-thumbs">
+          <img src="lumen-pasos.jpg" alt="LUMEN OCR: fácil de usar en 3 pasos" loading="lazy">
+          <img src="lumen-funciones.jpg" alt="LUMEN OCR: funciones principales" loading="lazy">
+        </div>
+      </div>
+      <div class="split-copy">
+        <span class="section-tag lu-tag">🆕 Nueva versión 3.1 · 100% gratis</span>
+        <h2>LUMEN OCR: fotos y PDF a texto, <span class="lu-grad">gratis y sin internet</span></h2>
+        <p>Haz una foto a un documento, un libro o un ticket y en segundos tienes el texto listo para corregir y guardar en Word. Sin teclear, sin registrarte y sin subir tus papeles a ningún sitio.</p>
+        <ul class="vo-list">
+          <li>📄 Fotos, capturas y PDF (escaneados, con texto o con contraseña)</li>
+          <li>📴 Funciona sin internet: español e inglés incluidos, +22 idiomas</li>
+          <li>✍️ Editor estilo Word y exportación a TXT, Word, HTML y PDF</li>
+          <li>🔒 100% privado y con autoguardado si se va la corriente</li>
+        </ul>
+        <div class="vo-ctas">
+          <a class="btn btn-primary" href="https://corderorauly-raullg57.github.io/lumen_ocr/" target="_blank" rel="noopener">USAR GRATIS AHORA
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://corderorauly-raullg57.github.io/lumen_ocr/LUMEN-OCR-v3.1-offline.zip" rel="noopener">💻 Descargar para Windows</a>
+        </div>
+        <p class="lu-note">💡 <b>Combo oficina:</b> LUMEN pasa a texto tus papeles y <b>AudioScribe Pro</b> tus audios y grabaciones (prueba 3 días gratis). <a href="#packs" style="color:#7DD3FC">Ver Pack Oficina →</a></p>
       </div>
     </div>
   </div>
